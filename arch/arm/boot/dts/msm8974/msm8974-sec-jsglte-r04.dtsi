@@ -139,6 +139,7 @@
 			/* cypress,touchkey_id-gpio = <&msmgpio 101 0x00>; */
 			cypress,tkey-keycodes = <139 158>;
 			cypress,i2c-pull-up = <1>;
+			cypress,fw_update_flag = <1>;
 		};
 	};
 

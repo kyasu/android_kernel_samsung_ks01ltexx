@@ -1,4 +1,4 @@
-﻿/*
+/*
  *  Force feedback support for PantherLord/GreenAsia based devices
  *
  *  The devices are distributed under various names and the same USB device ID

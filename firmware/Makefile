@@ -231,12 +231,16 @@ fw-shipped-$(CONFIG_KEYBOARD_CYPRESS_TOUCHKEY) += tkey/semco_cypress_tkey.fw
 fw-shipped-$(CONFIG_KEYBOARD_CYPRESS_TOUCHKEY) += tkey/semco02_cypress_tkey.fw
 fw-shipped-$(CONFIG_KEYBOARD_CYPRESS_TOUCHKEY) += tkey/semco04_cypress_tkey.fw
 else
-ifdef CONFIG_SEC_H_PROJECT 
+ifdef CONFIG_MACH_JSGLTE_CHN_CMCC
+fw-shipped-$(CONFIG_KEYBOARD_CYPRESS_TOUCHKEY_H) += tkey/jsglte_cypress_tkey.fw
+else
+ifdef CONFIG_SEC_H_PROJECT
 fw-shipped-$(CONFIG_KEYBOARD_CYPRESS_TOUCHKEY_H) += tkey/hlte_cypress_tkey.fw
 else
 fw-shipped-$(CONFIG_KEYBOARD_CYPRESS_TOUCHKEY_H) += tkey/hlte_cypress_tkey.fw
 fw-shipped-$(CONFIG_KEYBOARD_CYPRESS_TOUCHKEY_H) += tkey/hltejs01_cypress_tkey.fw
 fw-shipped-$(CONFIG_KEYBOARD_CYPRESS_TOUCHKEY_H) += tkey/klimt_cypress_tkey.fw
+endif
 endif
 fw-shipped-$(CONFIG_KEYBOARD_CYPRESS_TOUCHKEY_C) += tkey/berluti_cypress_tkey.fw
 fw-shipped-$(CONFIG_KEYBOARD_CYPRESS_TOUCHKEY) += tkey/semco_cypress_tkey.fw
